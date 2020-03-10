@@ -1,8 +1,9 @@
 class Calculadora:
-    def __init__(self):
-        self.__operandoUno=0
-        self.__operandoDos=0
-        self.__operador=0
+
+    def __init__(self, op1,op2,operador):
+        self.__operandoUno=op1
+        self.__operandoDos=op2
+        self.__operador=operador
 
     def getOperandoUno(self):
         return self.__operandoUno
@@ -13,5 +14,6 @@ class Calculadora:
     def getOperador(self):
         return self.__operador
 
-calc=Calculadora()
-print(calc.getOperandoUno())
+    def sumar( self ):
+        return self.__operandoUno + self.__operandoDos
+        
